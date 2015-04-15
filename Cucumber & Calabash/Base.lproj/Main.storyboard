@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zDt-ss-eSo">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -51,6 +51,15 @@
                                     <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Edt-3Z-aBj"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6j-kB-U8k">
+                                <rect key="frame" x="266" y="285" width="68" height="30"/>
+                                <state key="normal" title="Press me!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="owX-CK-Nkq" kind="show" id="gLy-ho-lYc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,14 +68,17 @@
                             <constraint firstItem="6sl-Ji-gdM" firstAttribute="centerX" secondItem="J41-yV-R8z" secondAttribute="centerX" constant="-98.5" id="8xb-cs-4mX"/>
                             <constraint firstItem="DJz-Ww-TE0" firstAttribute="leading" secondItem="6sl-Ji-gdM" secondAttribute="leading" id="Eft-pC-SzZ"/>
                             <constraint firstItem="J41-yV-R8z" firstAttribute="top" secondItem="6sl-Ji-gdM" secondAttribute="bottom" constant="14" id="KrG-1c-Qel"/>
+                            <constraint firstItem="TD2-nR-089" firstAttribute="centerX" secondItem="P6j-kB-U8k" secondAttribute="centerX" id="PVK-Th-3IT"/>
                             <constraint firstItem="DJz-Ww-TE0" firstAttribute="leading" secondItem="TXa-GL-GD3" secondAttribute="leading" id="SkM-oS-MAq"/>
                             <constraint firstItem="6sl-Ji-gdM" firstAttribute="top" secondItem="DJz-Ww-TE0" secondAttribute="bottom" constant="29" id="bag-JG-91H"/>
                             <constraint firstAttribute="centerX" secondItem="TD2-nR-089" secondAttribute="centerX" id="kBG-Hm-eb1"/>
                             <constraint firstItem="DJz-Ww-TE0" firstAttribute="top" secondItem="TXa-GL-GD3" secondAttribute="bottom" constant="8" id="n11-QC-YoP"/>
+                            <constraint firstItem="P6j-kB-U8k" firstAttribute="top" secondItem="TD2-nR-089" secondAttribute="bottom" constant="59" id="tkW-7r-Ak3"/>
                             <constraint firstAttribute="centerY" secondItem="DJz-Ww-TE0" secondAttribute="centerY" constant="213" id="xiR-me-dkw"/>
                             <constraint firstAttribute="centerX" secondItem="DJz-Ww-TE0" secondAttribute="centerX" id="y8N-dW-mUv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="First Controller" id="BZu-jV-2iO"/>
                     <connections>
                         <outlet property="ageLabel" destination="J41-yV-R8z" id="Rdp-yp-lRz"/>
                         <outlet property="ageSlider" destination="TD2-nR-089" id="HLB-1M-boB"/>
@@ -75,6 +87,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1067" y="-403"/>
+        </scene>
+        <!--Second Controller-->
+        <scene sceneID="3CR-xC-zbv">
+            <objects>
+                <viewController id="owX-CK-Nkq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OJz-tE-Qaa"/>
+                        <viewControllerLayoutGuide type="bottom" id="adt-6E-Hgz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dQE-1b-pwO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second Controller" id="Evo-qz-JY7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zU4-ye-YcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="-403"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tRm-XS-AjW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zDt-ss-eSo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d8P-vf-YKR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pW0-vq-pm0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIS-aO-VlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="-403"/>
         </scene>
     </scenes>
 </document>
