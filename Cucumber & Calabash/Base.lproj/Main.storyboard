@@ -57,7 +57,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="owX-CK-Nkq" kind="show" id="gLy-ho-lYc"/>
+                                    <action selector="pressMeDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YwK-lF-TAM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,30 +83,30 @@
                         <outlet property="ageLabel" destination="J41-yV-R8z" id="Rdp-yp-lRz"/>
                         <outlet property="ageSlider" destination="TD2-nR-089" id="HLB-1M-boB"/>
                         <outlet property="nameField" destination="DJz-Ww-TE0" id="f92-pz-Lan"/>
+                        <segue destination="csC-wT-lO6" kind="custom" identifier="toSecondViewController" id="lif-Go-e0L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="-403"/>
+            <point key="canvasLocation" x="1153" y="-403"/>
         </scene>
-        <!--Second Controller-->
-        <scene sceneID="3CR-xC-zbv">
+        <!--Second View Controller-->
+        <scene sceneID="AJM-5f-vgT">
             <objects>
-                <viewController id="owX-CK-Nkq" sceneMemberID="viewController">
+                <viewController id="csC-wT-lO6" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OJz-tE-Qaa"/>
-                        <viewControllerLayoutGuide type="bottom" id="adt-6E-Hgz"/>
+                        <viewControllerLayoutGuide type="top" id="YEC-ow-y1C"/>
+                        <viewControllerLayoutGuide type="bottom" id="OFo-hy-KHq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dQE-1b-pwO">
+                    <view key="view" contentMode="scaleToFill" id="BB6-Kq-DHi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Second Controller" id="Evo-qz-JY7"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zU4-ye-YcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqL-fi-yOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="-403"/>
+            <point key="canvasLocation" x="1867" y="-403"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tRm-XS-AjW">
