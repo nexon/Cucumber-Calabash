@@ -12,7 +12,6 @@
 		D3B108A21ADEF9AF0034DDD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B108A11ADEF9AF0034DDD7 /* ViewController.m */; };
 		D3B108A51ADEF9AF0034DDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B108A31ADEF9AF0034DDD7 /* Main.storyboard */; };
 		D3B108A71ADEF9AF0034DDD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B108A61ADEF9AF0034DDD7 /* Images.xcassets */; };
-		D3B108AA1ADEF9AF0034DDD7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B108A81ADEF9AF0034DDD7 /* LaunchScreen.xib */; };
 		D3B108B61ADEF9AF0034DDD7 /* Cucumber___CalabashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B108B51ADEF9AF0034DDD7 /* Cucumber___CalabashTests.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		D3B108A11ADEF9AF0034DDD7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D3B108A41ADEF9AF0034DDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3B108A61ADEF9AF0034DDD7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D3B108A91ADEF9AF0034DDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D3B108AF1ADEF9AF0034DDD7 /* Cucumber & CalabashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cucumber & CalabashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B108B41ADEF9AF0034DDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B108B51ADEF9AF0034DDD7 /* Cucumber___CalabashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Cucumber___CalabashTests.m"; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				D3B108A11ADEF9AF0034DDD7 /* ViewController.m */,
 				D3B108A31ADEF9AF0034DDD7 /* Main.storyboard */,
 				D3B108A61ADEF9AF0034DDD7 /* Images.xcassets */,
-				D3B108A81ADEF9AF0034DDD7 /* LaunchScreen.xib */,
 				D3B108991ADEF9AF0034DDD7 /* Supporting Files */,
 			);
 			path = "Cucumber & Calabash";
@@ -200,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B108A51ADEF9AF0034DDD7 /* Main.storyboard in Resources */,
-				D3B108AA1ADEF9AF0034DDD7 /* LaunchScreen.xib in Resources */,
 				D3B108A71ADEF9AF0034DDD7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +246,6 @@
 				D3B108A41ADEF9AF0034DDD7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D3B108A81ADEF9AF0034DDD7 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3B108A91ADEF9AF0034DDD7 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

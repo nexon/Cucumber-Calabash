@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJz-Ww-TE0">
+                                <rect key="frame" x="161" y="72" width="278" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="nameField"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="J6D-9p-B2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXa-GL-GD3">
+                                <rect key="frame" x="161" y="43" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Age is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sl-Ji-gdM">
+                                <rect key="frame" x="161" y="131" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J41-yV-R8z">
+                                <rect key="frame" x="295" y="166" width="10" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="ageLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="98" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-nR-089">
+                                <rect key="frame" x="159" y="196" width="282" height="31"/>
+                                <accessibility key="accessibilityConfiguration" label="ageSlider"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Edt-3Z-aBj"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TD2-nR-089" firstAttribute="leading" secondItem="6sl-Ji-gdM" secondAttribute="leading" id="6Vw-y9-PK3"/>
+                            <constraint firstAttribute="centerY" secondItem="TD2-nR-089" secondAttribute="centerY" constant="89" id="7NF-9A-VoX"/>
+                            <constraint firstItem="6sl-Ji-gdM" firstAttribute="centerX" secondItem="J41-yV-R8z" secondAttribute="centerX" constant="-98.5" id="8xb-cs-4mX"/>
+                            <constraint firstItem="DJz-Ww-TE0" firstAttribute="leading" secondItem="6sl-Ji-gdM" secondAttribute="leading" id="Eft-pC-SzZ"/>
+                            <constraint firstItem="J41-yV-R8z" firstAttribute="top" secondItem="6sl-Ji-gdM" secondAttribute="bottom" constant="14" id="KrG-1c-Qel"/>
+                            <constraint firstItem="DJz-Ww-TE0" firstAttribute="leading" secondItem="TXa-GL-GD3" secondAttribute="leading" id="SkM-oS-MAq"/>
+                            <constraint firstItem="6sl-Ji-gdM" firstAttribute="top" secondItem="DJz-Ww-TE0" secondAttribute="bottom" constant="29" id="bag-JG-91H"/>
+                            <constraint firstAttribute="centerX" secondItem="TD2-nR-089" secondAttribute="centerX" id="kBG-Hm-eb1"/>
+                            <constraint firstItem="DJz-Ww-TE0" firstAttribute="top" secondItem="TXa-GL-GD3" secondAttribute="bottom" constant="8" id="n11-QC-YoP"/>
+                            <constraint firstAttribute="centerY" secondItem="DJz-Ww-TE0" secondAttribute="centerY" constant="213" id="xiR-me-dkw"/>
+                            <constraint firstAttribute="centerX" secondItem="DJz-Ww-TE0" secondAttribute="centerX" id="y8N-dW-mUv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="J41-yV-R8z" id="Rdp-yp-lRz"/>
+                        <outlet property="ageSlider" destination="TD2-nR-089" id="HLB-1M-boB"/>
+                        <outlet property="nameField" destination="DJz-Ww-TE0" id="f92-pz-Lan"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
