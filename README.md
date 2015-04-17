@@ -7,6 +7,6 @@
 
 
 ## Some links
-[Calabash-iOS API](https://github.com/calabash/calabash-ios/wiki/Calabash-iOS-Ruby-API)
-[Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin)
-[Doc. about Given-When-Then](https://github.com/cucumber/cucumber/wiki/Given-When-Then)
+1. [Calabash-iOS API](https://github.com/calabash/calabash-ios/wiki/Calabash-iOS-Ruby-API)
+2. [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin)
+3. [Doc. about Given-When-Then](https://github.com/cucumber/cucumber/wiki/Given-When-Then)
