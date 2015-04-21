@@ -36,4 +36,12 @@
 - (IBAction)sliderDidChange:(id)sender {
     self.ageLabel.text = [NSString stringWithFormat:@"%f", self.ageSlider.value];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqual:@"toSecondViewController"]) {
+        SecondViewController *vc = segue.destinationViewController;
+        vc.title = self.nameField.text;
+    }
+}
 @end

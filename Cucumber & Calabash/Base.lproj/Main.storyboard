@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zDt-ss-eSo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zDt-ss-eSo">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJz-Ww-TE0">
-                                <rect key="frame" x="161" y="72" width="278" height="30"/>
+                                <rect key="frame" x="161" y="101" width="278" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="nameField"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="J6D-9p-B2Q"/>
@@ -26,33 +26,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXa-GL-GD3">
-                                <rect key="frame" x="161" y="43" width="96" height="21"/>
+                                <rect key="frame" x="161" y="72" width="96" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Age is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sl-Ji-gdM">
-                                <rect key="frame" x="161" y="131" width="81" height="21"/>
+                                <rect key="frame" x="161" y="160" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J41-yV-R8z">
-                                <rect key="frame" x="295" y="166" width="10" height="21"/>
+                                <rect key="frame" x="295" y="195" width="10" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="ageLabel"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="98" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-nR-089">
-                                <rect key="frame" x="159" y="196" width="282" height="31"/>
+                                <rect key="frame" x="159" y="225" width="282" height="31"/>
                                 <accessibility key="accessibilityConfiguration" label="ageSlider"/>
                                 <connections>
                                     <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Edt-3Z-aBj"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6j-kB-U8k">
-                                <rect key="frame" x="266" y="285" width="68" height="30"/>
+                                <rect key="frame" x="266" y="314" width="68" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="submit"/>
                                 <state key="normal" title="Press me!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -64,7 +65,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TD2-nR-089" firstAttribute="leading" secondItem="6sl-Ji-gdM" secondAttribute="leading" id="6Vw-y9-PK3"/>
-                            <constraint firstAttribute="centerY" secondItem="TD2-nR-089" secondAttribute="centerY" constant="89" id="7NF-9A-VoX"/>
+                            <constraint firstAttribute="centerY" secondItem="TD2-nR-089" secondAttribute="centerY" constant="60" id="7NF-9A-VoX"/>
                             <constraint firstItem="6sl-Ji-gdM" firstAttribute="centerX" secondItem="J41-yV-R8z" secondAttribute="centerX" constant="-98.5" id="8xb-cs-4mX"/>
                             <constraint firstItem="DJz-Ww-TE0" firstAttribute="leading" secondItem="6sl-Ji-gdM" secondAttribute="leading" id="Eft-pC-SzZ"/>
                             <constraint firstItem="J41-yV-R8z" firstAttribute="top" secondItem="6sl-Ji-gdM" secondAttribute="bottom" constant="14" id="KrG-1c-Qel"/>
@@ -74,7 +75,7 @@
                             <constraint firstAttribute="centerX" secondItem="TD2-nR-089" secondAttribute="centerX" id="kBG-Hm-eb1"/>
                             <constraint firstItem="DJz-Ww-TE0" firstAttribute="top" secondItem="TXa-GL-GD3" secondAttribute="bottom" constant="8" id="n11-QC-YoP"/>
                             <constraint firstItem="P6j-kB-U8k" firstAttribute="top" secondItem="TD2-nR-089" secondAttribute="bottom" constant="59" id="tkW-7r-Ak3"/>
-                            <constraint firstAttribute="centerY" secondItem="DJz-Ww-TE0" secondAttribute="centerY" constant="213" id="xiR-me-dkw"/>
+                            <constraint firstAttribute="centerY" secondItem="DJz-Ww-TE0" secondAttribute="centerY" constant="184" id="xiR-me-dkw"/>
                             <constraint firstAttribute="centerX" secondItem="DJz-Ww-TE0" secondAttribute="centerX" id="y8N-dW-mUv"/>
                         </constraints>
                     </view>
@@ -103,6 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqL-fi-yOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
