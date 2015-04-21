@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C56100C5-4045-4753-95BC-472D67AC9EC1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Cucumber &amp; Calabash</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E8F48CB70201E169CB433850D914CED4C958E228</key>
 		<string>github.com:nexon/Cucumber-Calabash.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cucumber &amp; Calabash.xcodeproj/project.xcworkspace</string>
+	<string>Cucumber &amp; Calabash.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E8F48CB70201E169CB433850D914CED4C958E228</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>E8F48CB70201E169CB433850D914CED4C958E228</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Cucumber%20&amp;%20Calabash</string>
+			<string>Cucumber-Calabash</string>
 		</dict>
 	</array>
 </dict>

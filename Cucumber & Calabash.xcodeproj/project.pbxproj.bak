@@ -64,7 +64,6 @@
 		D3B1088D1ADEF9AF0034DDD7 = {
 			isa = PBXGroup;
 			children = (
-				D3BD065B1AE67C12008DED2C /* Frameworks */,
 				D3B108981ADEF9AF0034DDD7 /* Cucumber & Calabash */,
 				D3B108B21ADEF9AF0034DDD7 /* Cucumber & CalabashTests */,
 				D3B108971ADEF9AF0034DDD7 /* Products */,
@@ -120,13 +119,6 @@
 				D3B108B41ADEF9AF0034DDD7 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D3BD065B1AE67C12008DED2C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,7 +412,6 @@
 				D3B108BB1ADEF9AF0034DDD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		D3B108BC1ADEF9AF0034DDD7 /* Build configuration list for PBXNativeTarget "Cucumber & CalabashTests" */ = {
 			isa = XCConfigurationList;
@@ -429,7 +420,6 @@
 				D3B108BE1ADEF9AF0034DDD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
