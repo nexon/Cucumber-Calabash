@@ -1,4 +1,4 @@
-#Calabash-iOS Example
+# Calabash-iOS Example
 
 
 1. Install **Calabash for iOS** `sudo gem install calabash-ios`
